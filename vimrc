@@ -72,3 +72,7 @@ let os = substitute(system('uname'), "\n", "", "")
 if os == "FreeBSD"
 	let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
 endif
+
+if filereadable($HOME.'/.vimrc_local')
+	source $HOME/.vimrc_local
+endif
