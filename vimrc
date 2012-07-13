@@ -85,3 +85,5 @@ let g:vundle_default_git_proto = 'git'
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
+
+comm! W exec 'w !sudo tee % > /dev/null' | e!
