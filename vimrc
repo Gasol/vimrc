@@ -37,6 +37,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'taglist'
 Bundle 'sukima/xmledit'
 Bundle 'majutsushi/tagbar'
+Bundle 'shawncplus/phpcomplete.vim'
 
 filetype plugin indent on
 
