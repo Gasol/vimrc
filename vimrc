@@ -41,6 +41,7 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Gasol/vim-php'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'stephpy/vim-php-cs-fixer'
 
 filetype plugin indent on
 
