@@ -36,6 +36,7 @@ Bundle 'millermedeiros/vim-statline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'taglist'
 Bundle 'sukima/xmledit'
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on
 
