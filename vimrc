@@ -3,9 +3,6 @@
 
 set nocompatible
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
 set t_Co=256
 set history=50
 set number
@@ -24,6 +21,21 @@ set incsearch
 set hlsearch
 
 syntax on
+
+filetype off
+
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-haml'
+Bundle 'msanders/snipmate.vim'
+Bundle '2072/PHP-Indenting-for-VIm'
+Bundle 'millermedeiros/vim-statline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'taglist'
+Bundle 'sukima/xmledit'
 
 filetype plugin indent on
 
