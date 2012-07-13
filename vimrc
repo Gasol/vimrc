@@ -73,6 +73,8 @@ if os == "FreeBSD"
 	let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
 endif
 
+let g:vundle_default_git_proto = 'git'
+
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
