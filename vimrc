@@ -6,20 +6,24 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-syntax on
 set t_Co=256
-set incsearch
-set hlsearch
+set history=50
 set number
 set ruler
+
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,big5,gb2312
+
 set modeline
 set background=dark
 set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-set history=50
+
+set incsearch
+set hlsearch
+
+syntax on
 
 filetype plugin indent on
 
