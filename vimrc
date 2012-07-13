@@ -38,6 +38,7 @@ Bundle 'taglist'
 Bundle 'sukima/xmledit'
 Bundle 'majutsushi/tagbar'
 Bundle 'shawncplus/phpcomplete.vim'
+Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on
 
