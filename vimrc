@@ -40,6 +40,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Gasol/vim-php'
+set wildignore+=*/vim-php/doc/*
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'stephpy/vim-php-cs-fixer'
 
