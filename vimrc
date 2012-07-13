@@ -1,6 +1,8 @@
 " Gasol Wu <gasol.wu@gmail.com>
 " https://github.com/gasol/vimrc
 
+set nocompatible
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
@@ -15,7 +17,6 @@ set fileencoding=utf-8
 set fileencodings=utf-8,big5,gb2312
 set modeline
 set background=dark
-set nocompatible
 set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set history=50
