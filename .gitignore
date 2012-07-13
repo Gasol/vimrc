@@ -1,2 +1,5 @@
 .netrwhist
-bundle/.vundle
+bundle/*
+!bundle/local
+!bundle/thrift
+!bundle/python
