@@ -40,6 +40,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'Gasol/vim-php'
+Bundle 'jnwhiteh/vim-golang'
 
 filetype plugin indent on
 
