@@ -43,6 +43,7 @@ Bundle 'Gasol/vim-php'
 set wildignore+=*/vim-php/doc/*
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'gnuchangelog'
 
 filetype plugin indent on
 
@@ -81,6 +82,7 @@ if os == "FreeBSD"
 endif
 
 let g:vundle_default_git_proto = 'git'
+let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
