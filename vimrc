@@ -55,6 +55,7 @@ let python_sync_slow = 1
 autocmd FileType py set omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
 autocmd FileType css set omnifunc=csscomplete
+autocmd FileType perl set sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.go set filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.mako set filetype=mako
 autocmd BufNewFile,BufRead *.gradle set filetype=groovy sw=4 ts=4 et
