@@ -30,7 +30,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-haml'
-Bundle 'msanders/snipmate.vim'
+Bundle "garbas/vim-snipmate"
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'millermedeiros/vim-statline'
 Bundle 'tpope/vim-fugitive'
@@ -44,6 +44,11 @@ set wildignore+=*/vim-php/doc/*
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'gnuchangelog'
+
+" vim-snipmate dependencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
 
 filetype plugin indent on
 
