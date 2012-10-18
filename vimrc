@@ -57,16 +57,16 @@ let python_highlight_all = 1
 let python_sync_slow = 1
 
 " autocomplete
-autocmd FileType py set omnifunc=pythoncomplete
+autocmd FileType py setl omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
-autocmd FileType css set omnifunc=csscomplete
-autocmd FileType perl set sw=4 ts=4 et
-autocmd BufNewFile,BufRead *.go set filetype=go sw=4 ts=4
-autocmd BufNewFile,BufRead *.mako set filetype=mako
-autocmd BufNewFile,BufRead *.gradle set filetype=groovy sw=4 ts=4 et
-autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | set filetype=thrift
-autocmd BufNewFile,BufRead *.json set ft=javascript
-autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd FileType css setl omnifunc=csscomplete
+autocmd FileType perl setl sw=4 ts=4 et
+autocmd BufNewFile,BufRead *.gol set filetype=go sw=4 ts=4
+autocmd BufNewFile,BufRead *.makol set filetype=mako
+autocmd BufNewFile,BufRead *.gradlel set filetype=groovy sw=4 ts=4 et
+autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
+autocmd BufNewFile,BufRead *.json setl ft=javascript
+autocmd BufNewFile,BufRead *.md setl filetype=markdown
 
 map th :tabprev<CR>
 map tl :tabnext<CR>
