@@ -61,9 +61,9 @@ autocmd FileType py setl omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
 autocmd FileType css setl omnifunc=csscomplete
 autocmd FileType perl setl sw=4 ts=4 et
-autocmd BufNewFile,BufRead *.gol set filetype=go sw=4 ts=4
-autocmd BufNewFile,BufRead *.makol set filetype=mako
-autocmd BufNewFile,BufRead *.gradlel set filetype=groovy sw=4 ts=4 et
+autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
+autocmd BufNewFile,BufRead *.mako setl filetype=mako
+autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
 autocmd BufNewFile,BufRead *.json setl ft=javascript
 autocmd BufNewFile,BufRead *.md setl filetype=markdown
