@@ -65,7 +65,7 @@ autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.mako setl filetype=mako
 autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
-autocmd BufNewFile,BufRead *.json setl ft=javascript
+autocmd BufNewFile,BufRead *.json setl ft=javascript sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.md setl filetype=markdown
 
 map th :tabprev<CR>
