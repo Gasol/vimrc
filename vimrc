@@ -39,11 +39,13 @@ Bundle 'sukima/xmledit'
 Bundle 'majutsushi/tagbar'
 Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Gasol/vim-scripts'
 Bundle 'Gasol/vim-php'
 set wildignore+=*/vim-php/doc/*
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'gnuchangelog'
+Bundle 'sprsquish/thrift.vim'
 
 " vim-snipmate dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -59,8 +61,10 @@ let python_sync_slow = 1
 " autocomplete
 autocmd FileType py setl omnifunc=pythoncomplete
 autocmd FileType python syntax keyword pythonDecorator True None False self
+autocmd FileType python setl sw=4 ts=4 sts=4 tw=120 sta et nosi
 autocmd FileType css setl omnifunc=csscomplete
 autocmd FileType perl setl sw=4 ts=4 et
+autocmd FileType c setl sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.mako setl filetype=mako
 autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
