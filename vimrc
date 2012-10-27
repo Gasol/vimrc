@@ -47,6 +47,7 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'gnuchangelog'
 Bundle 'sprsquish/thrift.vim'
+Bundle 'fs111/pydoc.vim'
 
 " vim-snipmate dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
