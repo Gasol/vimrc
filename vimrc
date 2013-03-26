@@ -28,6 +28,7 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle "airblade/vim-gitgutter"
+Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-haml'
