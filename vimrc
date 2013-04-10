@@ -10,7 +10,7 @@ set ruler
 
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8,big5,gb2312
+set fileencodings=utf-8,big5,gb2312,sjis
 
 set modeline
 set background=dark
