@@ -56,7 +56,7 @@ Bundle 'tpope/vim-markdown'
 " vim-snipmate dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
+Bundle "honza/vim-snippets"
 
 filetype plugin indent on
 
