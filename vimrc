@@ -53,6 +53,7 @@ Bundle 'fs111/pydoc.vim'
 Bundle 'Efficient-python-folding'
 Bundle 'tpope/vim-markdown'
 Bundle 'EasyMotion'
+Bundle 'xml.vim'
 
 " vim-snipmate dependencies
 Bundle "MarcWeber/vim-addon-mw-utils"
