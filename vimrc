@@ -52,6 +52,8 @@ Bundle 'sprsquish/thrift.vim'
 Bundle 'fs111/pydoc.vim'
 Bundle 'Efficient-python-folding'
 Bundle 'tpope/vim-markdown'
+Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_guide_size = 1
 Bundle 'EasyMotion'
 Bundle 'joonty/vdebug'
 let g:vdebug_keymap = {
