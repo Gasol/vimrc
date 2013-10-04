@@ -56,20 +56,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_guide_size = 1
 Bundle 'EasyMotion'
 Bundle 'joonty/vdebug'
-let g:vdebug_keymap = {
-\    "run" : "<leader>,5",
-\    "run_to_cursor" : "",
-\    "step_over" : "<leader>,2",
-\    "step_into" : "<leader>,3",
-\    "step_out" : "<leader>,4",
-\    "close" : "<leader>,7",
-\    "detach" : "<leader>,6",
-\    "set_breakpoint" : "<leader>,8",
-\    "get_context" : "<leader>,9",
-\    "eval_under_cursor" : "<leader>,0",
-\    "eval_visual" : "<Leader>,e"
-\}
-
 Bundle 'xml.vim'
 
 " vim-snipmate dependencies
