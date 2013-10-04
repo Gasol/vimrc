@@ -33,6 +33,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-surround'
 Bundle "garbas/vim-snipmate"
 Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'millermedeiros/vim-statline'
