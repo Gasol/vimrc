@@ -25,7 +25,7 @@ syntax on
 filetype off
 
 set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
@@ -63,6 +63,8 @@ Plugin 'xml.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
+
+call vundle#end()
 
 filetype plugin indent on
 
