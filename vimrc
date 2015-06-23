@@ -46,7 +46,7 @@ Bundle 'Gasol/vim-scripts'
 Bundle 'Gasol/vim-php'
 Bundle 'tpope/vim-cucumber'
 set wildignore+=*/vim-php/doc/*
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'gnuchangelog'
 Bundle 'sprsquish/thrift.vim'
