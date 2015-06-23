@@ -27,42 +27,42 @@ filetype off
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle "airblade/vim-gitgutter"
-Bundle 'kien/ctrlp.vim'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-surround'
-Bundle "garbas/vim-snipmate"
-Bundle '2072/PHP-Indenting-for-VIm'
-Bundle 'millermedeiros/vim-statline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'taglist.vim'
-Bundle 'sukima/xmledit'
-Bundle 'majutsushi/tagbar'
-Bundle 'shawncplus/phpcomplete.vim'
-Bundle 'Gasol/vim-scripts'
-Bundle 'Gasol/vim-php'
-Bundle 'tpope/vim-cucumber'
+Plugin "airblade/vim-gitgutter"
+Plugin 'kien/ctrlp.vim'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-surround'
+Plugin "garbas/vim-snipmate"
+Plugin '2072/PHP-Indenting-for-VIm'
+Plugin 'millermedeiros/vim-statline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'taglist.vim'
+Plugin 'sukima/xmledit'
+Plugin 'majutsushi/tagbar'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'Gasol/vim-scripts'
+Plugin 'Gasol/vim-php'
+Plugin 'tpope/vim-cucumber'
 set wildignore+=*/vim-php/doc/*
-Bundle 'fatih/vim-go'
-Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'gnuchangelog'
-Bundle 'sprsquish/thrift.vim'
-Bundle 'fs111/pydoc.vim'
-Bundle 'Efficient-python-folding'
-Bundle 'tpope/vim-markdown'
-Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'fatih/vim-go'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'gnuchangelog'
+Plugin 'sprsquish/thrift.vim'
+Plugin 'fs111/pydoc.vim'
+Plugin 'Efficient-python-folding'
+Plugin 'tpope/vim-markdown'
+Plugin 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_guide_size = 1
-Bundle 'EasyMotion'
-Bundle 'joonty/vdebug'
-Bundle 'xml.vim'
+Plugin 'EasyMotion'
+Plugin 'joonty/vdebug'
+Plugin 'xml.vim'
 
 " vim-snipmate dependencies
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
+Plugin "MarcWeber/vim-addon-mw-utils"
+Plugin "tomtom/tlib_vim"
+Plugin "honza/vim-snippets"
 
 filetype plugin indent on
 
