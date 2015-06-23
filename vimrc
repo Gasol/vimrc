@@ -27,14 +27,14 @@ filetype off
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Plugin "airblade/vim-gitgutter"
+Plugin 'gmarik/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-surround'
-Plugin "garbas/vim-snipmate"
+Plugin 'garbas/vim-snipmate'
 Plugin '2072/PHP-Indenting-for-VIm'
 Plugin 'millermedeiros/vim-statline'
 Plugin 'tpope/vim-fugitive'
@@ -60,9 +60,9 @@ Plugin 'joonty/vdebug'
 Plugin 'xml.vim'
 
 " vim-snipmate dependencies
-Plugin "MarcWeber/vim-addon-mw-utils"
-Plugin "tomtom/tlib_vim"
-Plugin "honza/vim-snippets"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
 
 filetype plugin indent on
 
