@@ -4,9 +4,7 @@
 set nocompatible
 
 set t_Co=256
-set history=50
 set number
-set ruler
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -14,11 +12,7 @@ set fileencodings=utf-8,big5,gb2312,sjis
 
 set modeline
 set background=dark
-set backspace=indent,eol,start
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-
-set incsearch
-set hlsearch
 
 syntax on
 
@@ -28,6 +22,7 @@ set runtimepath+=~/.vim/bundle/vundle/
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-sensible'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'derekwyatt/vim-scala'
@@ -66,8 +61,6 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 
 call vundle#end()
-
-filetype plugin indent on
 
 " python syntax highlight
 let python_highlight_all = 1
