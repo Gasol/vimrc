@@ -9,7 +9,7 @@ set number
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,big5,gb2312,sjis
-
+set hlsearch
 set modeline
 set background=dark
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
