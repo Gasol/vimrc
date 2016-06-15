@@ -41,6 +41,7 @@ Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'Gasol/vim-scripts'
 Plugin 'Gasol/vim-php'
 Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-commentary'
 set wildignore+=*/vim-php/doc/*
 Plugin 'fatih/vim-go'
 Plugin 'stephpy/vim-php-cs-fixer'
