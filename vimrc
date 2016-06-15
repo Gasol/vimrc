@@ -49,6 +49,7 @@ Plugin 'sprsquish/thrift.vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'Efficient-python-folding'
 Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_guide_size = 1
 Plugin 'EasyMotion'
