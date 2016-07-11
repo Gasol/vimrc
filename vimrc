@@ -46,7 +46,6 @@ set wildignore+=*/vim-php/doc/*
 Plugin 'fatih/vim-go'
 Plugin 'stephpy/vim-php-cs-fixer'
 Plugin 'gnuchangelog'
-Plugin 'sprsquish/thrift.vim'
 Plugin 'fs111/pydoc.vim'
 Plugin 'Efficient-python-folding'
 Plugin 'tpope/vim-markdown'
