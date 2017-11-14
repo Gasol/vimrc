@@ -4,7 +4,7 @@
 set nocompatible
 
 set t_Co=256
-set number
+set number relativenumber
 
 set encoding=utf-8
 set fileencoding=utf-8
@@ -51,6 +51,7 @@ Plugin 'Efficient-python-folding'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 let g:indent_guides_guide_size = 1
 Plugin 'EasyMotion'
 Plugin 'joonty/vdebug'
