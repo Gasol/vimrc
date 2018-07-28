@@ -95,6 +95,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
+let NERDTreeMinimalUI=1
 
 let Tlist_Use_Right_Window = 1
 let os = substitute(system('uname'), "\n", "", "")
