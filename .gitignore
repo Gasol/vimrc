@@ -1,5 +1,2 @@
 .netrwhist
-bundle/*
-!bundle/local
-!bundle/thrift
-!bundle/python
+plugged/

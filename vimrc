@@ -18,52 +18,54 @@ syntax on
 
 filetype off
 
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/ctrlp.vim'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-surround'
-Plugin 'garbas/vim-snipmate'
-Plugin '2072/PHP-Indenting-for-VIm'
-Plugin 'millermedeiros/vim-statline'
-Plugin 'rking/ag.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'taglist.vim'
-Plugin 'sukima/xmledit'
-Plugin 'majutsushi/tagbar'
-Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'Gasol/vim-scripts'
-Plugin 'Gasol/vim-php'
-Plugin 'tpope/vim-cucumber'
-Plugin 'tpope/vim-commentary'
+Plug 'gmarik/Vundle.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-sensible'
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/ctrlp.vim'
+Plug 'kylef/apiblueprint.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-haml'
+Plug 'tpope/vim-surround'
+Plug 'garbas/vim-snipmate'
+Plug '2072/PHP-Indenting-for-VIm'
+Plug 'millermedeiros/vim-statline'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'vim-scripts/taglist.vim'
+Plug 'sukima/xmledit'
+Plug 'majutsushi/tagbar'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'Gasol/vim-scripts'
+Plug 'Gasol/vim-php'
+Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-commentary'
 set wildignore+=*/vim-php/doc/*
-Plugin 'fatih/vim-go'
-Plugin 'stephpy/vim-php-cs-fixer'
-Plugin 'gnuchangelog'
-Plugin 'fs111/pydoc.vim'
-Plugin 'Efficient-python-folding'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'fatih/vim-go'
+Plug 'stephpy/vim-php-cs-fixer'
+" Plugin 'gnuchangelog'
+Plug 'fs111/pydoc.vim'
+Plug 'vim-scripts/Efficient-python-folding'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-unimpaired'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 let g:indent_guides_guide_size = 1
-Plugin 'EasyMotion'
-Plugin 'joonty/vdebug'
-Plugin 'xml.vim'
+Plug 'vim-scripts/EasyMotion'
+Plug 'joonty/vdebug'
+Plug 'vim-scripts/xml.vim'
 
 " vim-snipmate dependencies
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'honza/vim-snippets'
 
-call vundle#end()
+call plug#end()
 
 " python syntax highlight
 let python_highlight_all = 1
@@ -111,5 +113,11 @@ let g:gitgutter_enabled = 0
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
+let g:vdebug_options = {
+\ "port": 9003,
+\ "ide_key": 'gasolwu',
+\ "proxy_host": '',
+\ "proxy_port": 0,
+\ }
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
