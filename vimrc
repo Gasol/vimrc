@@ -66,6 +66,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
 
@@ -128,4 +129,5 @@ set tags=./.tags;,.tags
 let g:gutentags_ctags_tagfile='.ctags'
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
+let g:asyncrun_open = 8
 set statusline+=%{gutentags#statusline()}
