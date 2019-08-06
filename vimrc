@@ -68,6 +68,7 @@ Plug 'honza/vim-snippets'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'mhinz/vim-signify'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 call plug#end()
 
