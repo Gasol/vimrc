@@ -121,3 +121,5 @@ let g:vdebug_options = {
 \ }
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
+
+set tags=./.tags;,.tags
