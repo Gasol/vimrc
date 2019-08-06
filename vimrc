@@ -52,6 +52,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/EasyMotion'
 Plug 'vim-scripts/Efficient-python-folding'
 Plug 'vim-scripts/taglist.vim'
+Plug 'vimwiki/vimwiki'
 
 " vim-snipmate dependencies
 Plug 'MarcWeber/vim-addon-mw-utils'
