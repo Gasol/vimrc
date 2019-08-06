@@ -65,6 +65,8 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 
+Plug 'ludovicchabant/vim-gutentags'
+
 call plug#end()
 
 " python syntax highlight
@@ -123,3 +125,7 @@ let g:vdebug_options = {
 comm! W exec 'w !sudo tee % > /dev/null' | e!
 
 set tags=./.tags;,.tags
+let g:gutentags_ctags_tagfile='.ctags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+set statusline+=%{gutentags#statusline()}
