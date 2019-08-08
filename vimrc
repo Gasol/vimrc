@@ -20,7 +20,6 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'gmarik/Vundle.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
