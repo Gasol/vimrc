@@ -20,6 +20,8 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-pug'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
