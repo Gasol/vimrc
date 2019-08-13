@@ -20,6 +20,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'rayburgemeestre/phpfolding.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'digitaltoad/vim-pug'
 Plug 'editorconfig/editorconfig-vim'
