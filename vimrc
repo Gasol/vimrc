@@ -31,6 +31,8 @@ Plug 'alvan/vim-php-manual'
 Plug 'derekwyatt/vim-scala'
 Plug 'digitaltoad/vim-pug'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'elzr/vim-json'
+let g:vim_json_syntax_conceal = 0
 Plug 'fatih/vim-go'
 Plug 'fs111/pydoc.vim'
 Plug 'garbas/vim-snipmate'
@@ -89,7 +91,6 @@ autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
 autocmd BufNewFile,BufRead *.mako setl filetype=mako
 autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
-autocmd BufNewFile,BufRead *.json setl ft=javascript sw=4 ts=4 et
 autocmd BufNewFile,BufRead *.md setl filetype=markdown
 
 map th :tabprev<CR>
