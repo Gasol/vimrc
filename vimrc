@@ -21,26 +21,18 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug '2072/PHP-Indenting-for-VIm'
-Plug 'StanAngeloff/php.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-php-manual'
-Plug 'derekwyatt/vim-scala'
-Plug 'digitaltoad/vim-pug'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'elzr/vim-json'
-let g:vim_json_syntax_conceal = 0
-Plug 'fatih/vim-go'
 Plug 'fs111/pydoc.vim'
 Plug 'garbas/vim-snipmate'
 Plug 'itchyny/lightline.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'joonty/vdebug'
-Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
-Plug 'kylef/apiblueprint.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'millermedeiros/vim-statline'
@@ -48,23 +40,20 @@ Plug 'rayburgemeestre/phpfolding.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'shawncplus/phpcomplete.vim'
+Plug 'sheerun/vim-polyglot'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-python/python-syntax'
 Plug 'vim-scripts/EasyMotion'
 Plug 'vim-scripts/Efficient-python-folding'
 Plug 'vim-scripts/taglist.vim'
-Plug 'vim-scripts/xml.vim'
 
 " vim-snipmate dependencies
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -133,3 +122,4 @@ let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 let g:asyncrun_open = 8
 set statusline+=%{gutentags#statusline()}
+let g:vim_json_syntax_conceal = 0
