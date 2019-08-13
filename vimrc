@@ -21,7 +21,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug '2072/PHP-Indenting-for-VIm'
-Plug 'Gasol/vim-scripts'
 Plug 'StanAngeloff/php.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -61,6 +60,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'vim-python/python-syntax'
 Plug 'vim-scripts/EasyMotion'
 Plug 'vim-scripts/Efficient-python-folding'
 Plug 'vim-scripts/taglist.vim'
@@ -81,9 +81,6 @@ let python_highlight_all = 1
 let python_sync_slow = 1
 
 " autocomplete
-autocmd FileType py setl omnifunc=pythoncomplete
-autocmd FileType python syntax keyword pythonDecorator True None False self
-autocmd FileType python setl sw=4 ts=4 sts=4 tw=120 sta et nosi
 autocmd FileType css setl omnifunc=csscomplete
 autocmd FileType perl setl sw=4 ts=4 et
 autocmd FileType c setl sw=4 ts=4 et
