@@ -25,6 +25,7 @@ Plug 'Gasol/vim-scripts'
 Plug 'StanAngeloff/php.vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-php-manual'
 Plug 'derekwyatt/vim-scala'
@@ -42,7 +43,6 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'millermedeiros/vim-statline'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rayburgemeestre/phpfolding.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
@@ -62,7 +62,6 @@ Plug 'vim-scripts/EasyMotion'
 Plug 'vim-scripts/Efficient-python-folding'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/xml.vim'
-let g:indent_guides_guide_size = 1
 
 " vim-snipmate dependencies
 Plug 'MarcWeber/vim-addon-mw-utils'
