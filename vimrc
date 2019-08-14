@@ -24,7 +24,6 @@ Plug '2072/PHP-Indenting-for-VIm'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'Yggdroot/indentLine'
-Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-php-manual'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/pydoc.vim'
@@ -109,8 +108,6 @@ endif
 
 let g:vundle_default_git_proto = 'git'
 let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
-
-let g:gitgutter_enabled = 0
 
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
