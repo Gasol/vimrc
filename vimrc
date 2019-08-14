@@ -72,10 +72,6 @@ let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
-" python syntax highlight
-let python_highlight_all = 1
-let python_sync_slow = 1
-
 " autocomplete
 autocmd FileType css setl omnifunc=csscomplete
 autocmd FileType perl setl sw=4 ts=4 et
@@ -106,7 +102,6 @@ if os == "FreeBSD"
 	let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
 endif
 
-let g:vundle_default_git_proto = 'git'
 let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 
 if filereadable($HOME.'/.vimrc_local')
@@ -127,4 +122,3 @@ let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 let g:asyncrun_open = 8
 set statusline+=%{gutentags#statusline()}
-let g:vim_json_syntax_conceal = 0
