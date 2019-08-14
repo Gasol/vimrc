@@ -33,6 +33,7 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'joonty/vdebug'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'rayburgemeestre/phpfolding.vim'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/nerdtree'
@@ -85,13 +86,6 @@ autocmd BufNewFile,BufRead *.md setl filetype=markdown
 map th :tabprev<CR>
 map tl :tabnext<CR>
 nnoremap <silent> <F12> :TlistToggle<CR>
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
 
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
 let NERDTreeMinimalUI=1
