@@ -48,6 +48,7 @@ Plug 'tpope/vim-cucumber'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
+Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
@@ -121,6 +122,19 @@ let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 let g:asyncrun_open = 8
 set statusline+=%{gutentags#statusline()}
+
+let g:projectionist_heuristics = {
+\   "tests/&phpunit.xml|phpunit.xml.dist": {
+\     "src/*.php": {
+\       "alternate": "tests/{}Test.php",
+\       "type": "source"
+\     },
+\     "tests/*Test.php": {
+\       "alternate": "src/{}.php",
+\       "type": "test"
+\     }
+\   }
+\ }
 
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>
