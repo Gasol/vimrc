@@ -28,7 +28,9 @@ Plug 'alvan/vim-php-manual'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/pydoc.vim'
 Plug 'garbas/vim-snipmate'
+Plug 'haginaga/vim-compiler-phpunit'
 Plug 'itchyny/lightline.vim'
+Plug 'janko-m/vim-test'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'joonty/vdebug'
 Plug 'ludovicchabant/vim-gutentags'
@@ -43,6 +45,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'sukima/xmledit'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-cucumber'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
 Plug 'tpope/vim-repeat'
@@ -118,3 +121,9 @@ let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 let g:asyncrun_open = 8
 set statusline+=%{gutentags#statusline()}
+
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
