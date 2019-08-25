@@ -53,6 +53,7 @@ Plug 'vim-scripts/EasyMotion'
 Plug 'vim-scripts/Efficient-python-folding'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'vim-scripts/wombat256.vim'
 
 " vim-snipmate dependencies
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -72,6 +73,7 @@ endif
 let g:deoplete#enable_at_startup = 1
 
 call plug#end()
+colorscheme wombat256mod
 
 " autocomplete
 autocmd FileType css setl omnifunc=csscomplete
