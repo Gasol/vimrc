@@ -16,6 +16,7 @@ if dein#load_state('~/.cache/dein')
   " Let dein manage dein
   " Required:
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('wsdjeg/dein-ui.vim')
   call dein#add('2072/PHP-Indenting-for-VIm')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
   call dein#add('Yggdroot/LeaderF', { 'build': './install.sh' })
