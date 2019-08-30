@@ -1,11 +1,94 @@
 " Gasol Wu <gasol.wu@gmail.com>
 " https://github.com/gasol/vimrc
 
-set nocompatible
+" dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
 
+" Required:
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('2072/PHP-Indenting-for-VIm')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('Yggdroot/LeaderF', { 'build': './install.sh' })
+  call dein#add('Yggdroot/indentLine')
+  call dein#add('alvan/vim-php-manual')
+  call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('fs111/pydoc.vim')
+  call dein#add('garbas/vim-snipmate')
+  call dein#add('haginaga/vim-compiler-phpunit')
+  call dein#add('itchyny/lightline.vim')
+  call dein#add('janko-m/vim-test')
+  call dein#add('jeffkreeftmeijer/vim-numbertoggle')
+  call dein#add('joonty/vdebug')
+  call dein#add('ludovicchabant/vim-gutentags')
+  call dein#add('majutsushi/tagbar')
+  call dein#add('ntpeters/vim-better-whitespace')
+  call dein#add('rayburgemeestre/phpfolding.vim')
+  call dein#add('rking/ag.vim')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('shawncplus/phpcomplete.vim')
+  call dein#add('sheerun/vim-polyglot')
+  call dein#add('skywind3000/asyncrun.vim')
+  call dein#add('sukima/xmledit')
+  call dein#add('tpope/vim-commentary')
+  call dein#add('tpope/vim-cucumber')
+  call dein#add('tpope/vim-dispatch')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('tpope/vim-git')
+  call dein#add('tpope/vim-projectionist')
+  call dein#add('tpope/vim-repeat')
+  call dein#add('tpope/vim-sensible')
+  call dein#add('tpope/vim-surround')
+  call dein#add('tpope/vim-unimpaired')
+  call dein#add('vim-scripts/EasyMotion')
+  call dein#add('vim-scripts/Efficient-python-folding')
+  call dein#add('vim-scripts/taglist.vim')
+  call dein#add('vimwiki/vimwiki')
+  call dein#add('vim-scripts/wombat256.vim')
+
+  " vim-snipmate dependencies
+  call dein#add('MarcWeber/vim-addon-mw-utils')
+  call dein#add('tomtom/tlib_vim')
+  call dein#add('honza/vim-snippets')
+
+  call dein#add('mhinz/vim-signify')
+  call dein#add('dense-analysis/ale')
+
+  if has('nvim')
+    call dein#add('Shougo/deoplete.nvim', { 'hook_post_update': ':UpdateRemotePlugins' })
+  else
+    call dein#add('Shougo/deoplete.nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
+
+"End dein Scripts-------------------------
+"
 set t_Co=256
 set number relativenumber
-
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,big5,gb2312,sjis
@@ -13,71 +96,9 @@ set hlsearch
 set modeline
 set background=dark
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
-
-syntax on
-
-filetype off
-
-call plug#begin('~/.vim/plugged')
-
-Plug '2072/PHP-Indenting-for-VIm'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'Yggdroot/indentLine'
-Plug 'alvan/vim-php-manual'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'fs111/pydoc.vim'
-Plug 'garbas/vim-snipmate'
-Plug 'haginaga/vim-compiler-phpunit'
-Plug 'itchyny/lightline.vim'
-Plug 'janko-m/vim-test'
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
-Plug 'joonty/vdebug'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'rayburgemeestre/phpfolding.vim'
-Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'shawncplus/phpcomplete.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'skywind3000/asyncrun.vim'
-Plug 'sukima/xmledit'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-cucumber'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-git'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'vim-scripts/EasyMotion'
-Plug 'vim-scripts/Efficient-python-folding'
-Plug 'vim-scripts/taglist.vim'
-Plug 'vimwiki/vimwiki'
-Plug 'vim-scripts/wombat256.vim'
-
-" vim-snipmate dependencies
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'honza/vim-snippets'
-
-Plug 'mhinz/vim-signify'
-Plug 'dense-analysis/ale'
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
-
-call plug#end()
 colorscheme wombat256mod
+
+let g:deoplete#enable_at_startup = 1
 
 " autocomplete
 autocmd FileType css setl omnifunc=csscomplete
