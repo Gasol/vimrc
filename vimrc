@@ -121,6 +121,7 @@ let g:gutentags_ctags_tagfile='.ctags'
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 let g:asyncrun_open = 8
+let g:ale_virtualtext_cursor = 1
 set statusline+=%{gutentags#statusline()}
 
 let g:projectionist_heuristics = {
