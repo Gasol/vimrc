@@ -106,7 +106,6 @@ set shortmess+=c
 colorscheme wombat256mod
 
 let g:coc_global_extensions = ['coc-phpls', 'coc-json']
-let g:deoplete#enable_at_startup = 1
 
 " autocomplete
 augroup MyCustomFileType
