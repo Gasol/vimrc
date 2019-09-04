@@ -109,14 +109,16 @@ let g:coc_global_extensions = ['coc-phpls', 'coc-json']
 let g:deoplete#enable_at_startup = 1
 
 " autocomplete
-autocmd FileType css setl omnifunc=csscomplete
-autocmd FileType perl setl sw=4 ts=4 et
-autocmd FileType c setl sw=4 ts=4 et
-autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
-autocmd BufNewFile,BufRead *.mako setl filetype=mako
-autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
-autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
-autocmd BufNewFile,BufRead *.md setl filetype=markdown
+augroup MyCustomFileType
+  autocmd FileType css setl omnifunc=csscomplete
+  autocmd FileType perl setl sw=4 ts=4 et
+  autocmd FileType c setl sw=4 ts=4 et
+  autocmd BufNewFile,BufRead *.go setl filetype=go sw=4 ts=4
+  autocmd BufNewFile,BufRead *.mako setl filetype=mako
+  autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
+  autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
+  autocmd BufNewFile,BufRead *.md setl filetype=markdown
+augroup end
 
 map th :tabprev<CR>
 map tl :tabnext<CR>
