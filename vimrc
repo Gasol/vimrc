@@ -149,6 +149,7 @@ comm! W exec 'w !sudo tee % > /dev/null' | e!
 
 if executable('universal-ctags')
 	let g:gutentags_ctags_executable = 'universal-ctags'
+	let g:Lf_Ctags = 'universal-ctags'
 endif
 
 set tags=./.tags;,.tags
