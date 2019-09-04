@@ -170,6 +170,22 @@ let g:projectionist_heuristics = {
 \   }
 \ }
 
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
+let g:lightline = {
+\  'colorscheme': 'wombat',
+\  'active': {
+\    'left': [ [ 'mode', 'paste' ],
+\              [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+\  },
+\  'component_function': {
+\    'cocstatus': 'coc#status',
+\    'currentfunction': 'CocCurrentFunction'
+\  }
+\}
+
 nmap <silent> t<C-n> :TestNearest<CR>
 nmap <silent> t<C-f> :TestFile<CR>
 nmap <silent> t<C-s> :TestSuite<CR>
