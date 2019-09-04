@@ -64,6 +64,7 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('mhinz/vim-signify')
   call dein#add('dense-analysis/ale')
+  call dein#add('neoclide/coc.nvim', {'build': 'yarn install --frozen-lockfile'})
 
   if has('nvim')
     call dein#add('Shougo/deoplete.nvim', { 'hook_post_update': ':UpdateRemotePlugins' })
@@ -98,8 +99,13 @@ set hlsearch
 set modeline
 set background=dark
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+set noshowmode
+set updatetime=300
+set shortmess+=c
+
 colorscheme wombat256mod
 
+let g:coc_global_extensions = ['coc-phpls', 'coc-json']
 let g:deoplete#enable_at_startup = 1
 
 " autocomplete
