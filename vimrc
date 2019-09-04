@@ -145,6 +145,10 @@ let g:vdebug_options = {
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
 
+if executable('universal-ctags')
+	let g:gutentags_ctags_executable = 'universal-ctags'
+endif
+
 set tags=./.tags;,.tags
 let g:gutentags_ctags_tagfile='.ctags'
 let s:vim_tags = expand('~/.cache/tags')
