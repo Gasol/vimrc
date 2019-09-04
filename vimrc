@@ -128,9 +128,9 @@ let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
 let NERDTreeMinimalUI=1
 
 let Tlist_Use_Right_Window = 1
-let os = substitute(system('uname'), "\n", "", "")
-if os == "FreeBSD"
-	let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
+let os = substitute(system('uname'), '\n', '', '')
+if os == 'FreeBSD'
+	let Tlist_Ctags_Cmd = '/usr/local/bin/exctags'
 endif
 
 let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
@@ -139,10 +139,10 @@ if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
 let g:vdebug_options = {
-\ "port": 9003,
-\ "ide_key": 'gasolwu',
-\ "proxy_host": '',
-\ "proxy_port": 0,
+\ 'port': 9003,
+\ 'ide_key': 'gasolwu',
+\ 'proxy_host': '',
+\ 'proxy_port': 0,
 \ }
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
@@ -160,14 +160,14 @@ let g:ale_virtualtext_cursor = 1
 set statusline+=%{gutentags#statusline()}
 
 let g:projectionist_heuristics = {
-\   "tests/&phpunit.xml|phpunit.xml.dist": {
-\     "src/*.php": {
-\       "alternate": "tests/{}Test.php",
-\       "type": "source"
+\   'tests/&phpunit.xml|phpunit.xml.dist': {
+\     'src/*.php': {
+\       'alternate': 'tests/{}Test.php',
+\       'type': 'source'
 \     },
-\     "tests/*Test.php": {
-\       "alternate": "src/{}.php",
-\       "type": "test"
+\     'tests/*Test.php': {
+\       'alternate': 'src/{}.php',
+\       'type': 'test'
 \     }
 \   }
 \ }
