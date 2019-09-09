@@ -138,6 +138,7 @@ repo = 'dense-analysis/ale'
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 build = 'yarn install --frozen-lockfile'
+if = 'executable("node")'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
