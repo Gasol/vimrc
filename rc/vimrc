@@ -38,8 +38,6 @@ augroup MyCustomFileType
   autocmd BufNewFile,BufRead *.md setl filetype=markdown
 augroup end
 
-map th :tabprev<CR>
-map tl :tabnext<CR>
 nnoremap <silent> <F12> :TlistToggle<CR>
 
 let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
