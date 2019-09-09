@@ -34,6 +34,7 @@ repo = 'jeffkreeftmeijer/vim-numbertoggle'
 
 [[plugins]]
 repo = 'ludovicchabant/vim-gutentags'
+if = 'executable("ctags") || executable("universal-ctags")'
 
 [[plugins]]
 repo = 'joonty/vdebug'
