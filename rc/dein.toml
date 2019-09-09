@@ -1,0 +1,151 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = '2072/PHP-Indenting-for-VIm'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'Yggdroot/LeaderF'
+build =  './install.sh'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'alvan/vim-php-manual'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'jeffkreeftmeijer/vim-numbertoggle'
+
+[[plugins]]
+repo = 'ludovicchabant/vim-gutentags'
+
+[[plugins]]
+repo = 'joonty/vdebug'
+
+[[plugins]]
+repo = 'haginaga/vim-compiler-phpunit'
+
+[[plugins]]
+repo = 'janko-m/vim-test'
+
+[[plugins]]
+repo = 'rking/ag.vim'
+
+[[plugins]]
+repo = 'michaeljsmith/vim-indent-object'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+
+[[plugins]]
+repo = 'rayburgemeestre/phpfolding.vim'
+
+[[plugins]]
+repo = 'skywind3000/asyncrun.vim'
+
+[[plugins]]
+repo = 'shawncplus/phpcomplete.vim'
+
+[[plugins]]
+repo = 'vim-scripts/wombat256.vim'
+
+[[plugins]]
+repo = 'vimwiki/vimwiki'
+
+[[plugins]]
+repo = 'vim-scripts/EasyMotion'
+
+[[plugins]]
+repo = 'vim-scripts/Efficient-python-folding'
+
+[[plugins]]
+repo = 'vim-scripts/argtextobj.vim'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'tpope/vim-cucumber'
+
+[[plugins]]
+repo = 'tpope/vim-dispatch'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-git'
+
+[[plugins]]
+repo = 'tpope/vim-projectionist'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
+repo = 'tpope/vim-scriptease'
+
+[[plugins]]
+repo = 'tpope/vim-sensible'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-unimpaired'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'garbas/vim-snipmate'
+
+[[plugins]]
+repo = 'MarcWeber/vim-addon-mw-utils'
+
+[[plugins]]
+repo = 'tomtom/tlib_vim'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+[[plugins]]
+repo = 'mhinz/vim-signify'
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_post_update = ':UpdateRemotePlugins'
+
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+on_if = '!has("nvim")'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+on_if = '!has("nvim")'
