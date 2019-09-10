@@ -17,11 +17,11 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 repo = 'Yggdroot/LeaderF'
 build =  './install.sh'
 hook_add = '''
-    nnoremap <silent><unique> <Leader>ft :<C-U>LeaderfBufTagAll<CR>
-    nnoremap <silent><unique> <Leader>ff :<C-U>Leaderf file --no-ignore<CR>
-    nnoremap <silent><unique> <Leader>fn :<C-U>LeaderfFunction<CR>
-    nnoremap <silent><unique> <Leader>fb :<C-U>LeaderfBufferAll<CR>
-    nnoremap <silent><unique> <Leader>fh :<C-U>LeaderfHelp<CR>
+    nnoremap <silent><unique> <Leader>Ft :<C-U>LeaderfBufTagAll<CR>
+    nnoremap <silent><unique> <Leader>Ff :<C-U>Leaderf file --no-ignore<CR>
+    nnoremap <silent><unique> <Leader>Fn :<C-U>LeaderfFunction<CR>
+    nnoremap <silent><unique> <Leader>Fb :<C-U>LeaderfBufferAll<CR>
+    nnoremap <silent><unique> <Leader>Fh :<C-U>LeaderfHelp<CR>
 '''
 
 [[plugins]]
