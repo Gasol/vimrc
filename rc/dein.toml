@@ -16,6 +16,13 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 [[plugins]]
 repo = 'Yggdroot/LeaderF'
 build =  './install.sh'
+hook_add = '''
+    nnoremap <silent><unique> <Leader>ft :<C-U>LeaderfBufTagAll<CR>
+    nnoremap <silent><unique> <Leader>ff :<C-U>Leaderf file --no-ignore<CR>
+    nnoremap <silent><unique> <Leader>fn :<C-U>LeaderfFunction<CR>
+    nnoremap <silent><unique> <Leader>fb :<C-U>LeaderfBufferAll<CR>
+    nnoremap <silent><unique> <Leader>fh :<C-U>LeaderfHelp<CR>
+'''
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
