@@ -146,6 +146,19 @@ repo = 'dense-analysis/ale'
 repo = 'neoclide/coc.nvim'
 build = 'yarn install --frozen-lockfile'
 if = 'executable("node")'
+hook_add = '''
+    autocmd FileType php nnoremap <silent> <Leader>gd <Plug>(coc-definition)
+    autocmd FileType php nnoremap <silent> <Leader>gi <Plug>(coc-implementation)
+    autocmd FileType php nnoremap <silent> <Leader>gr <Plug>(coc-references)
+    autocmd FileType php nnoremap <silent> <Leader>gr <Plug>(coc-references)
+    autocmd FileType php nnoremap <silent> <Leader>gr <Plug>(coc-references)
+    autocmd FileType php nnoremap <silent> ]d <Plug>(coc-diagnostic-next)
+    autocmd FileType php nnoremap <silent> [d <Plug>(coc-diagnostic-prev)
+    autocmd FileType php setl formatexpr=CocAction('formatSelected')
+
+    command! -nargs=0 CocFormat :call CocAction('format')
+    command! -nargs=0 CocRename :call CocAction('rename')
+'''
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
