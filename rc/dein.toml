@@ -26,6 +26,9 @@ hook_add = '''
     nnoremap <silent><unique> <Leader>Fn :<C-U>LeaderfFunction<CR>
     nnoremap <silent><unique> <Leader>Fb :<C-U>LeaderfBufferAll<CR>
     nnoremap <silent><unique> <Leader>Fh :<C-U>LeaderfHelp<CR>
+    if executable('universal-ctags')
+        let g:Lf_Ctags = 'universal-ctags'
+    endif
 '''
 
 [[plugins]]
@@ -46,15 +49,40 @@ repo = 'jeffkreeftmeijer/vim-numbertoggle'
 [[plugins]]
 repo = 'ludovicchabant/vim-gutentags'
 if = 'executable("ctags") || executable("universal-ctags")'
+hook_add = '''
+    if executable('universal-ctags')
+        let g:gutentags_ctags_executable = 'universal-ctags'
+    endif
+    set tags=./.tags;,.tags
+    let g:gutentags_ctags_tagfile='.ctags'
+    let s:vim_tags = expand('~/.cache/tags')
+    let g:gutentags_cache_dir = s:vim_tags
+    set statusline+=%{gutentags#statusline()}
+'''
 
 [[plugins]]
 repo = 'joonty/vdebug'
+hook_add = '''
+    let g:vdebug_options = {
+    \ 'port': 9003,
+    \ 'ide_key': 'gasolwu',
+    \ 'proxy_host': '',
+    \ 'proxy_port': 0,
+    \ }
+'''
 
 [[plugins]]
 repo = 'haginaga/vim-compiler-phpunit'
 
 [[plugins]]
 repo = 'janko-m/vim-test'
+hook_add = '''
+    nmap <silent> t<C-n> :TestNearest<CR>
+    nmap <silent> t<C-f> :TestFile<CR>
+    nmap <silent> t<C-s> :TestSuite<CR>
+    nmap <silent> t<C-l> :TestLast<CR>
+    nmap <silent> t<C-g> :TestVisit<CR>
+'''
 
 [[plugins]]
 repo = 'rking/ag.vim'
@@ -70,6 +98,9 @@ repo = 'rayburgemeestre/phpfolding.vim'
 
 [[plugins]]
 repo = 'skywind3000/asyncrun.vim'
+hook_add = '''
+    let g:asyncrun_open = 8
+'''
 
 [[plugins]]
 repo = 'shawncplus/phpcomplete.vim'
@@ -162,6 +193,9 @@ repo = 'mhinz/vim-signify'
 
 [[plugins]]
 repo = 'dense-analysis/ale'
+hook_add = '''
+    let g:ale_virtualtext_cursor = 1
+'''
 
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -177,6 +211,26 @@ hook_add = '''
 
     command! -nargs=0 CocFormat :call CocAction('format')
     command! -nargs=0 CocRename :call CocAction('rename')
+
+    let g:coc_global_extensions = ['coc-phpls', 'coc-json', 'coc-snippets', 'coc-tsserver', 'coc-tslint', 'coc-eslint']
+
+    function! CocCurrentFunction()
+        return get(b:, 'coc_current_function', '')
+    endfunction
+
+    let g:lightline = {
+    \  'colorscheme': 'wombat',
+    \  'active': {
+    \    'left': [ [ 'mode', 'paste' ],
+    \              [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+    \  },
+    \  'component_function': {
+    \    'cocstatus': 'coc#status',
+    \    'currentfunction': 'CocCurrentFunction'
+    \  }
+    \}
+
+
 '''
 
 [[plugins]]

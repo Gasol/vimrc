@@ -24,9 +24,6 @@ set shortmess+=c
 
 colorscheme wombat256mod
 
-let g:coc_global_extensions = ['coc-phpls', 'coc-json', 'coc-snippets', 'coc-tsserver', 'coc-tslint', 'coc-eslint']
-
-" autocomplete
 augroup MyCustomFileType
   autocmd FileType css setl omnifunc=csscomplete
   autocmd FileType perl setl sw=4 ts=4 et
@@ -43,46 +40,5 @@ let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
-let g:vdebug_options = {
-\ 'port': 9003,
-\ 'ide_key': 'gasolwu',
-\ 'proxy_host': '',
-\ 'proxy_port': 0,
-\ }
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
-
-if executable('universal-ctags')
-	let g:gutentags_ctags_executable = 'universal-ctags'
-	let g:Lf_Ctags = 'universal-ctags'
-endif
-
-set tags=./.tags;,.tags
-let g:gutentags_ctags_tagfile='.ctags'
-let s:vim_tags = expand('~/.cache/tags')
-let g:gutentags_cache_dir = s:vim_tags
-let g:asyncrun_open = 8
-let g:ale_virtualtext_cursor = 1
-set statusline+=%{gutentags#statusline()}
-
-function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
-endfunction
-
-let g:lightline = {
-\  'colorscheme': 'wombat',
-\  'active': {
-\    'left': [ [ 'mode', 'paste' ],
-\              [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-\  },
-\  'component_function': {
-\    'cocstatus': 'coc#status',
-\    'currentfunction': 'CocCurrentFunction'
-\  }
-\}
-
-nmap <silent> t<C-n> :TestNearest<CR>
-nmap <silent> t<C-f> :TestFile<CR>
-nmap <silent> t<C-s> :TestSuite<CR>
-nmap <silent> t<C-l> :TestLast<CR>
-nmap <silent> t<C-g> :TestVisit<CR>
