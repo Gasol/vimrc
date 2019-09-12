@@ -106,6 +106,20 @@ repo = 'tpope/vim-git'
 
 [[plugins]]
 repo = 'tpope/vim-projectionist'
+hook_add = '''
+    let g:projectionist_heuristics = {
+    \   'tests/&phpunit.xml|phpunit.xml.dist': {
+    \     'src/*.php': {
+    \       'alternate': 'tests/{}Test.php',
+    \       'type': 'source'
+    \     },
+    \     'tests/*Test.php': {
+    \       'alternate': 'src/{}.php',
+    \       'type': 'test'
+    \     }
+    \   }
+    \ }
+'''
 
 [[plugins]]
 repo = 'tpope/vim-repeat'

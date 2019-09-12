@@ -65,19 +65,6 @@ let g:asyncrun_open = 8
 let g:ale_virtualtext_cursor = 1
 set statusline+=%{gutentags#statusline()}
 
-let g:projectionist_heuristics = {
-\   'tests/&phpunit.xml|phpunit.xml.dist': {
-\     'src/*.php': {
-\       'alternate': 'tests/{}Test.php',
-\       'type': 'source'
-\     },
-\     'tests/*Test.php': {
-\       'alternate': 'src/{}.php',
-\       'type': 'test'
-\     }
-\   }
-\ }
-
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
