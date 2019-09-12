@@ -9,6 +9,10 @@ repo = '2072/PHP-Indenting-for-VIm'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+hook_add = '''
+    let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
+    let NERDTreeMinimalUI=1
+'''
 
 [[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'

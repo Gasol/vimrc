@@ -40,9 +40,6 @@ augroup end
 
 nnoremap <silent> <F12> :TlistToggle<CR>
 
-let NERDTreeIgnore=['\~$', '\.lo$', '\.la$', '\.pyc']
-let NERDTreeMinimalUI=1
-
 let Tlist_Use_Right_Window = 1
 let os = substitute(system('uname'), '\n', '', '')
 if os ==# 'FreeBSD'
