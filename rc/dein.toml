@@ -244,3 +244,9 @@ on_if = '!has("nvim")'
 [[plugins]]
 repo = 'roxma/vim-hug-neovim-rpc'
 on_if = '!has("nvim")'
+
+[[plugins]]
+repo = 'rhysd/git-messenger.vim'
+lazy = 1
+on_cmd = 'GitMessenger'
+on_map = '<Plug>(git-messenger)'
