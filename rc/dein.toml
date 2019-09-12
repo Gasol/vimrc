@@ -122,6 +122,9 @@ repo = 'tpope/vim-surround'
 repo = 'tpope/vim-unimpaired'
 
 [[plugins]]
+repo = 'tpope/vim-obsession'
+
+[[plugins]]
 repo = 'majutsushi/tagbar'
 
 [[plugins]]
