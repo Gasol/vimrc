@@ -38,14 +38,6 @@ augroup MyCustomFileType
   autocmd BufNewFile,BufRead *.md setl filetype=markdown
 augroup end
 
-nnoremap <silent> <F12> :TlistToggle<CR>
-
-let Tlist_Use_Right_Window = 1
-let os = substitute(system('uname'), '\n', '', '')
-if os ==# 'FreeBSD'
-	let Tlist_Ctags_Cmd = '/usr/local/bin/exctags'
-endif
-
 let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 
 if filereadable($HOME.'/.vimrc_local')
