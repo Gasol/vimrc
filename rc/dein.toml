@@ -204,6 +204,7 @@ if = 'executable("node")'
 hook_add = '''
     autocmd FileType php nmap <silent> <Leader>gi <Plug>(coc-implementation)
     autocmd FileType php nmap <silent> <leader>gd <Plug>(coc-definition)
+    autocmd FileType php nmap <silent> <leader>gt <Plug>(coc-type-definition)
     autocmd FileType php nmap <silent> <Leader>gr <Plug>(coc-references)
     autocmd FileType php nmap <silent> ]d <Plug>(coc-diagnostic-next)
     autocmd FileType php nmap <silent> [d <Plug>(coc-diagnostic-prev)
