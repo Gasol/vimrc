@@ -254,3 +254,6 @@ on_map = '<Plug>(git-messenger)'
 
 [[plugins]]
 repo = 'machakann/vim-highlightedyank'
+
+[[plugins]]
+repo = 'rafi/awesome-vim-colorschemes'
