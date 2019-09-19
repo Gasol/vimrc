@@ -260,3 +260,6 @@ repo = 'rafi/awesome-vim-colorschemes'
 
 [[plugins]]
 repo = 'shumphrey/fugitive-gitlab.vim'
+
+[[plugins]]
+repo = 'sodapopcan/vim-twiggy'
