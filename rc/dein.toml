@@ -257,3 +257,6 @@ repo = 'machakann/vim-highlightedyank'
 
 [[plugins]]
 repo = 'rafi/awesome-vim-colorschemes'
+
+[[plugins]]
+repo = 'shumphrey/fugitive-gitlab.vim'
