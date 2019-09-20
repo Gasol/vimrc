@@ -266,3 +266,6 @@ repo = 'sodapopcan/vim-twiggy'
 
 [[plugins]]
 repo = 'justinmk/vim-sneak'
+
+[[plugins]]
+repo = 'tpope/vim-rsi'
