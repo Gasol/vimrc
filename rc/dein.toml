@@ -263,3 +263,7 @@ repo = 'shumphrey/fugitive-gitlab.vim'
 
 [[plugins]]
 repo = 'sodapopcan/vim-twiggy'
+
+
+[[plugins]]
+repo = 'justinmk/vim-sneak'
