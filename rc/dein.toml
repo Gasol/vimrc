@@ -29,6 +29,7 @@ hook_add = '''
     if executable('universal-ctags')
         let g:Lf_Ctags = 'universal-ctags'
     endif
+    let g:Lf_PreviewInPopup = 1
 '''
 
 [[plugins]]
