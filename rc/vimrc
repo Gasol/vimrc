@@ -47,5 +47,8 @@ let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 if filereadable($HOME.'/.vimrc_local')
 	source $HOME/.vimrc_local
 endif
+if has('nvim')
+    set pumblend=15
+endif
 
 comm! W exec 'w !sudo tee % > /dev/null' | e!
