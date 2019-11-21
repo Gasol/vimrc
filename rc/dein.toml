@@ -107,7 +107,7 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'joonty/vdebug'
+repo = 'vim-vdebug/vdebug'
 hook_add = '''
     let g:vdebug_options = {
     \ 'port': 9003,
