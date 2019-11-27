@@ -50,5 +50,3 @@ endif
 if has('nvim')
     set pumblend=15
 endif
-
-comm! W exec 'w !sudo tee % > /dev/null' | e!

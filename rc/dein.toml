@@ -315,3 +315,6 @@ repo = 'justinmk/vim-sneak'
 
 [[plugins]]
 repo = 'tpope/vim-rsi'
+
+[[plugins]]
+repo = 'chrisbra/sudoedit.vim'
