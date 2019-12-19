@@ -348,3 +348,6 @@ repo = 'tpope/vim-rsi'
 
 [[plugins]]
 repo = 'chrisbra/sudoedit.vim'
+
+[[plugins]]
+repo = 'dhulihan/vim-rfc'
