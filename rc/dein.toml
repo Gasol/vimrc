@@ -289,7 +289,7 @@ hook_add = '''
     command! -nargs=0 CocFormat :call CocAction('format')
     command! -nargs=0 CocRename :call CocAction('rename')
 
-    let g:coc_global_extensions = ['coc-phpls', 'coc-json', 'coc-snippets', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-rls']
+    let g:coc_global_extensions = ['coc-phpls', 'coc-json', 'coc-snippets', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-rls', 'coc-python']
 
     function! CocCurrentFunction()
         return get(b:, 'coc_current_function', '')
