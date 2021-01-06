@@ -385,3 +385,9 @@ repo = 'chrisbra/sudoedit.vim'
 
 [[plugins]]
 repo = 'dhulihan/vim-rfc'
+
+[[plugins]]
+repo = 'embear/vim-localvimrc'
+hook_add = '''
+let g:localvimrc_whitelist=$HOME . '/\.lvimrc'
+'''
