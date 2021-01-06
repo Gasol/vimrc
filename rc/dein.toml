@@ -316,6 +316,31 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_post_update = ':UpdateRemotePlugins'
+hook_add = '''
+let g:deoplete#enable_at_startup = 1
+'''
+hook_post_source = '''
+call deoplete#custom#option({
+    \ 'smart_case': v:true,
+    \})
+
+call deoplete#custom#source('LanguageClient',
+    \ 'min_pattern_length',
+    \ 2)
+call deoplete#custom#source('_',
+    \ 'disabled_syntaxes', ['String']
+    \ )
+
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+call deoplete#custom#option('sources', {
+    \ '_': ['ale'],
+    \ 'vim': ['vim'],
+    \ 'zsh': ['zsh']
+    \})
+
+call deoplete#custom#option('ignore_sources', {'_': ['buffer', 'around']})
+'''
 
 [[plugins]]
 repo = 'roxma/nvim-yarp'
