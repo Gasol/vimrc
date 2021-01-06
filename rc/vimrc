@@ -10,6 +10,7 @@ filetype plugin indent on
 syntax enable
 
 set t_Co=256
+set guifont=Menlo-Regular:h14
 set number relativenumber
 set encoding=utf-8
 set fileencoding=utf-8
