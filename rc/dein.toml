@@ -162,6 +162,9 @@ repo = 'vim-scripts/wombat256.vim'
 
 [[plugins]]
 repo = 'vimwiki/vimwiki'
+hook_add = '''
+let g:vimwiki_ext2syntax = {}
+'''
 
 [[plugins]]
 repo = 'vim-scripts/EasyMotion'
