@@ -312,6 +312,9 @@ call deoplete#custom#option('ignore_sources', {'_': ['buffer', 'around']})
 '''
 
 [[plugins]]
+repo = 'Shougo/neco-vim'
+
+[[plugins]]
 repo = 'roxma/nvim-yarp'
 on_if = '!has("nvim")'
 
