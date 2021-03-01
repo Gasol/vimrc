@@ -155,7 +155,7 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'shawncplus/phpcomplete.vim'
+repo = 'lvht/phpcd.vim'
 
 [[plugins]]
 repo = 'vim-scripts/wombat256.vim'
