@@ -283,43 +283,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-build = 'yarn install --frozen-lockfile'
-if = 'executable("node")'
-hook_add = '''
-    autocmd FileType php nmap <silent> <Leader>gi <Plug>(coc-implementation)
-    autocmd FileType php nmap <silent> <leader>gd <Plug>(coc-definition)
-    autocmd FileType php nmap <silent> <leader>gt <Plug>(coc-type-definition)
-    autocmd FileType php nmap <silent> <Leader>gr <Plug>(coc-references)
-    autocmd FileType php nmap <silent> ]d <Plug>(coc-diagnostic-next)
-    autocmd FileType php nmap <silent> [d <Plug>(coc-diagnostic-prev)
-    autocmd FileType php setl formatexpr=CocAction('formatSelected')
-
-    command! -nargs=0 CocFormat :call CocAction('format')
-    command! -nargs=0 CocRename :call CocAction('rename')
-
-    let g:coc_global_extensions = ['coc-phpls', 'coc-json', 'coc-snippets', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-rls', 'coc-python']
-
-    function! CocCurrentFunction()
-        return get(b:, 'coc_current_function', '')
-    endfunction
-
-    let g:lightline = {
-    \  'colorscheme': 'wombat',
-    \  'active': {
-    \    'left': [ [ 'mode', 'paste' ],
-    \              [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-    \  },
-    \  'component_function': {
-    \    'cocstatus': 'coc#status',
-    \    'currentfunction': 'CocCurrentFunction'
-    \  }
-    \}
-
-
-'''
-
-[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_post_update = ':UpdateRemotePlugins'
 hook_add = '''
