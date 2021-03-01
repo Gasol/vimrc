@@ -263,6 +263,9 @@ let g:tagbar_type_go = {
 
 [[plugins]]
 repo = 'garbas/vim-snipmate'
+hook_add = '''
+let g:snipMate = { 'snippet_version' : 1 }
+'''
 
 [[plugins]]
 repo = 'MarcWeber/vim-addon-mw-utils'
