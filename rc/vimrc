@@ -8,6 +8,8 @@ execute 'source ' . expand('~/.vim/rc/dein.rc.vim')
 
 filetype plugin indent on
 syntax enable
+nnoremap <SPACE> <NOP>
+let mapleader=" "
 
 set t_Co=256
 set guifont=Menlo-Regular:h14
