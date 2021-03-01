@@ -357,3 +357,9 @@ repo = 'embear/vim-localvimrc'
 hook_add = '''
 let g:localvimrc_whitelist=$HOME . '/\.lvimrc'
 '''
+
+[[plugins]]
+repo = 'neovim/nvim-lspconfig'
+
+[[plugins]]
+repo = 'deoplete-plugins/deoplete-lsp'
