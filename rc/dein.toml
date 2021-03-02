@@ -283,6 +283,7 @@ repo = 'mhinz/vim-signify'
 repo = 'dense-analysis/ale'
 hook_add = '''
     let g:ale_virtualtext_cursor = 1
+    let g:ale_php_phpcs_standard = 'PSR2'
 '''
 
 [[plugins]]
