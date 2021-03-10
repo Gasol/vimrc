@@ -77,11 +77,6 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 repo = 'Yggdroot/LeaderF'
 hook_post_update = ':LeaderfInstallCExtension'
 hook_add = '''
-    nnoremap <silent><unique> <Leader>Ft :<C-U>LeaderfBufTagAll<CR>
-    nnoremap <silent><unique> <Leader>Ff :<C-U>Leaderf file --no-ignore<CR>
-    nnoremap <silent><unique> <Leader>Fn :<C-U>LeaderfFunction<CR>
-    nnoremap <silent><unique> <Leader>Fb :<C-U>LeaderfBufferAll<CR>
-    nnoremap <silent><unique> <Leader>Fh :<C-U>LeaderfHelp<CR>
     if executable('universal-ctags')
         let g:Lf_Ctags = 'universal-ctags'
     endif
