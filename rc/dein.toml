@@ -3,6 +3,14 @@ help = '''
 nnoremap <buffer> <CR> <C-]>
 nnoremap <buffer> <BS> <C-T>
 nnoremap <buffer> q :quit<CR>
+
+if has('vertsplit')
+    let s:ratio = &co / str2float(&lines)
+    let s:display_landscape = s:ratio > 2.74
+    if s:display_landscape
+        wincmd L
+    endif
+endif
 '''
 
 [[plugins]]
