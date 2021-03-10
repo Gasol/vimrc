@@ -123,6 +123,7 @@ let g:vimwiki_ext2syntax = {}
 
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
+on_map = '<Leader><Leader>'
 
 [[plugins]]
 repo = 'vim-scripts/Efficient-python-folding'
