@@ -86,6 +86,7 @@ hook_add = '''
         let g:Lf_Ctags = 'universal-ctags'
     endif
     let g:Lf_PreviewInPopup = 1
+    let g:Lf_WindowPosition = 'popup'
 '''
 
 [[plugins]]
