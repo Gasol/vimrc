@@ -323,6 +323,13 @@ endfunction
 '''
 
 [[plugins]]
+repo = 'osyo-manga/vim-jplus'
+on_map = {n = '<Plug>'}
+hook_add = '''
+nmap J <Plug>(jplus)
+'''
+
+[[plugins]]
 repo = 'machakann/vim-highlightedyank'
 
 [[plugins]]
