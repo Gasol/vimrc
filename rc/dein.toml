@@ -7,54 +7,6 @@ lazy = 1
 on_cmd = 'DeinUpdate'
 
 [[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = '''
-    autocmd FileType denite call s:denite_my_settings()
-    function! s:denite_my_settings() abort
-        nnoremap <silent><buffer><expr> <CR>
-        \ denite#do_map('do_action')
-        nnoremap <silent><buffer><expr> t
-        \ denite#do_map('do_action', 'tabopen')
-        nnoremap <silent><buffer><expr> v
-        \ denite#do_map('do_action', 'vsplit')
-        nnoremap <silent><buffer><expr> s
-        \ denite#do_map('do_action', 'split')
-        nnoremap <silent><buffer><expr> d
-        \ denite#do_map('do_action', 'delete')
-        nnoremap <silent><buffer><expr> p
-        \ denite#do_map('do_action', 'preview')
-        nnoremap <silent><buffer><expr> q
-        \ denite#do_map('quit')
-        nnoremap <silent><buffer><expr> i
-        \ denite#do_map('open_filter_buffer')
-        nnoremap <silent><buffer><expr> <Space>
-        \ denite#do_map('toggle_select').'j'
-    endfunction
-
-    autocmd FileType denite-filter call s:denite_filter_my_settings()
-    function! s:denite_filter_my_settings() abort
-        imap <silent><buffer> <C-c> <Plug>(denite_filter_quit)
-    endfunction
-
-    call denite#custom#var('file/rec', 'command',
-    \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
-    call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
-    \ [ '.git/', '.ropeproject/', '__pycache__/',
-    \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
-
-    if exists('*nvim_open_win')
-        nnoremap <silent> <Leader>o :<C-U>Denite -split=floating -start-filter source<CR>
-        nnoremap <silent> <Leader>of :<C-U>Denite -split=floating -start-filter file/rec<CR>
-        nnoremap <silent> <Leader>ob :<C-U>Denite -split=floating -start-filter buffer<CR>
-    else
-        nnoremap <silent> <Leader>o :<C-U>Denite -start-filter source<CR>
-        nnoremap <silent> <Leader>of :<C-U>Denite -start-filter file/rec<CR>
-        nnoremap <silent> <Leader>ob :<C-U>Denite -start-filter buffer<CR>
-    endif
-
-'''
-
-[[plugins]]
 repo = 'sheerun/vim-polyglot'
 hook_add = '''
 let g:vim_markdown_strikethrough = 1
