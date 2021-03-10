@@ -167,7 +167,7 @@ let g:vimwiki_ext2syntax = {}
 '''
 
 [[plugins]]
-repo = 'vim-scripts/EasyMotion'
+repo = 'easymotion/vim-easymotion'
 
 [[plugins]]
 repo = 'vim-scripts/Efficient-python-folding'
