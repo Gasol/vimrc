@@ -5,6 +5,9 @@ if &compatible
 endif
 
 execute 'source ' . expand('~/.vim/rc/dein.rc.vim')
+if !has('nvim')
+  autocmd VimEnter * call dein#call_hook('post_source')
+endif
 
 filetype plugin indent on
 syntax enable
