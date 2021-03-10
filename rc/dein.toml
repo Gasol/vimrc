@@ -2,6 +2,11 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'wsdjeg/dein-ui.vim'
+lazy = 1
+on_cmd = 'DeinUpdate'
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 hook_add = '''
     autocmd FileType denite call s:denite_my_settings()
