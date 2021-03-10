@@ -75,7 +75,7 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
 repo = 'Yggdroot/LeaderF'
-build =  './install.sh'
+hook_post_source = ':LeaderfInstallCExtension'
 hook_add = '''
     nnoremap <silent><unique> <Leader>Ft :<C-U>LeaderfBufTagAll<CR>
     nnoremap <silent><unique> <Leader>Ff :<C-U>Leaderf file --no-ignore<CR>
