@@ -135,12 +135,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'lvht/phpcd.vim'
-on_ft = 'php'
-build = '/usr/bin/php $(which composer) install'
-merged = 0
-
-[[plugins]]
 repo = 'vim-scripts/wombat256.vim'
 
 [[plugins]]
