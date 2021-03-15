@@ -53,7 +53,7 @@ hook_add = '''
     let g:Lf_ShowDevIcons = 0
     nmap <silent><Leader>F :<C-U>LeaderfSelf<CR>
 '''
-on_map = {n = ['<Leader>f', <Leader>b]}
+on_map = {n = ['<Leader>f', '<Leader>b']}
 
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
