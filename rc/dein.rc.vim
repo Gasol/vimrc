@@ -22,7 +22,11 @@ if has('vim_starting')
     let g:dein#install_progress_type = 'title'
     let g:dein#install_log_filename = '~/dein.log'
 
-    let s:path = s:cache_dir . '/dein'
+    if has('nvim')
+        let s:path = s:cache_dir . '/dein.nvim'
+    else
+        let s:path = s:cache_dir . '/dein.vim'
+    endif
     if !dein#load_state(s:path)
       finish
     endif
