@@ -313,7 +313,6 @@ on_map = '<Plug>(git-messenger)'
 
 [[plugins]]
 repo = 'rhysd/vim-fixjson'
-lazy = 1
 on_ft = 'json'
 
 [[plugins]]
