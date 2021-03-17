@@ -35,7 +35,10 @@ if !has('nvim') && $TERM ==# 'tmux-256color'
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
-colorscheme wombat256mod
+try
+  colorscheme wombat256mod
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
 
 augroup MyCustomFileType
   autocmd FileType css setl omnifunc=csscomplete
