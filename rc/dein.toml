@@ -265,6 +265,7 @@ repo = 'dense-analysis/ale'
 hook_add = '''
     let g:ale_virtualtext_cursor = 1
     let g:ale_php_phpcs_standard = 'PSR2'
+    let g:ale_python_pylint_options = "--init-hook='import sys; sys.path.append(\".\")'"
 '''
 
 [[plugins]]
