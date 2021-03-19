@@ -32,7 +32,7 @@ if has('vim_starting')
       finish
     endif
 
-    let s:dein_toml = '~/.vim/rc/dein.toml'
+    let s:dein_toml = expand('<sfile>:p:h') . '/dein.toml'
     call dein#begin(s:path, [expand('<sfile>'), s:dein_toml])
         call dein#load_toml(s:dein_toml, {'lazy': 0})
     call dein#end()
