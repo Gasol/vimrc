@@ -383,3 +383,8 @@ if = 'has("nvim")'
 [[plugins]]
 repo = 'deoplete-plugins/deoplete-lsp'
 if = 'has("nvim")'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_cmd = 'MarkdownPreview'
+build = 'sh -c "cd app && yarn install"'
