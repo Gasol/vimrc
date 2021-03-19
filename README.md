@@ -1,4 +1,4 @@
-# /home/gasolwu/.vim/vimrc
+# /home/gasolwu/.vim/
 
 The Vim configuration is used in my daily work. I mainly use Neovim but still
 keep compatibility for Vim in terms of portability. Because I'm not only a
