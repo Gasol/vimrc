@@ -6,7 +6,7 @@ if has('vim_starting')
         call mkdir(s:cache_dir, 'p')
     endif
 
-    let s:dein_dir = finddir('dein.vim', '.;')
+    let s:dein_dir = ''
     if s:dein_dir !=# '' || &runtimepath !~# '/dein.vim'
         if s:dein_dir ==# '' && &runtimepath !~# '/dein.vim'
             let s:dein_dir = s:cache_dir . '/dein/repos/github.com/Shougo/dein.vim'
