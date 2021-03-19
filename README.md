@@ -29,7 +29,7 @@ TODO
 
 * Fast startup
 
-  Compares startup time to the minimum config (-u NONE) of neovim
+  Compares startup time to the minimum config (-u NONE) of Neovim
 
   ```diff
   -019.621  000.002: --- NVIM STARTED ---
