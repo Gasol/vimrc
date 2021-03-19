@@ -7,7 +7,7 @@ who operates on various unix-like machines. There are many languages I work
 with, including, but not limited to, PHP, Java, C, Python, JavaScript. Hope it
 might be useful if you speak the same language too. This Vim configuration
 isn't meant to make Vim looks like an IDE. It's optimized for security,
-efficiency and vim-ish with love.
+efficiency and vim-ish with ♥️.
 
 ## Installation
 
