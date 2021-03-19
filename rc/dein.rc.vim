@@ -6,10 +6,16 @@ if has('vim_starting')
         call mkdir(s:cache_dir, 'p')
     endif
 
+    if has('nvim')
+        let s:dein_name = '/dein.nvim'
+    else
+        let s:dein_name = '/dein.vim'
+    endif
+    let s:path = s:cache_dir . s:dein_name
     let s:dein_dir = ''
     if s:dein_dir !=# '' || &runtimepath !~# '/dein.vim'
         if s:dein_dir ==# '' && &runtimepath !~# '/dein.vim'
-            let s:dein_dir = s:cache_dir . '/dein/repos/github.com/Shougo/dein.vim'
+            let s:dein_dir = s:path . '/repos/github.com/Shougo/dein.vim'
             if !isdirectory(s:dein_dir)
                 execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
             endif
@@ -22,11 +28,6 @@ if has('vim_starting')
     let g:dein#install_progress_type = 'title'
     let g:dein#install_log_filename = '~/dein.log'
 
-    if has('nvim')
-        let s:path = s:cache_dir . '/dein.nvim'
-    else
-        let s:path = s:cache_dir . '/dein.vim'
-    endif
     if !dein#load_state(s:path)
       finish
     endif
