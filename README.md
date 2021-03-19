@@ -11,11 +11,30 @@ efficiency and vim-ish with love.
 
 ## Installation
 
-TODO
+> Don't blindly use someones's configuration
+
+I don't recommend it. Vim is not supposed to be used by that way. Instead, Just
+borrow some lines you might be interested in. or if you would like to see how
+good is my taste.
+
+    (cd $HOME; git clone https://github.com/Gasol/vimrc .vim)
+
+Only needed when it failed to install some plugins automatically.
+
+    nvim +'call dein#install()' 
 
 ## Features
 
 TODO
+
+* Fast startup
+
+  Compares startup time to the minimum config (-u NONE) of neovim
+
+  ```diff
+  -019.621  000.002: --- NVIM STARTED ---
+  +394.388  000.002: --- NVIM STARTED ---
+  ```
 
 ## Leader Key
 
