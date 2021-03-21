@@ -259,6 +259,7 @@ repo = 'honza/vim-snippets'
 
 [[plugins]]
 repo = 'mhinz/vim-signify'
+on_if = 'has("nvim") || has("patch-8.0.902")'
 
 [[plugins]]
 repo = 'dense-analysis/ale'
