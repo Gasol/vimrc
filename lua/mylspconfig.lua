@@ -6,10 +6,17 @@ local default_available_servers = {
 	'vuels',
 	'tsserver',
 }
+local custom_lsp_attach = function(client)
+	vim.api.nvim_buf_set_keymap(0, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true})
+	vim.api.nvim_buf_set_keymap(0, 'n', '<c-]>', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true})
+	vim.api.nvim_buf_set_option(0, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+end
 
 local status, lspconfig = pcall(require, 'lspconfig')
 if status then
-	for _, name in ipairs(default_available_servers) do
-		lspconfig[name].setup{}
-	end
+  for _, name in ipairs(default_available_servers) do
+    lspconfig[name].setup({
+      on_attach = custom_lsp_attach
+    })
+  end
 end
