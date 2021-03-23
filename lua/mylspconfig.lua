@@ -20,3 +20,29 @@ if status then
     })
   end
 end
+
+local lsphelper = require('lsp.helper')
+local sumneko_executable = lsphelper.find_sumneko_executable()
+if sumneko_executable ~= nil and #sumneko_executable > 0 then
+	local executable_dir = sumneko_executable:match('(.*[/\\].*[/\\])')
+  require'lspconfig'.sumneko_lua.setup {
+    cmd = {sumneko_executable, "-E", executable_dir .. "../..//main.lua"};
+    settings = {
+      Lua = {
+        runtime = {
+          version = 'LuaJIT',
+          path = vim.split(package.path, ';'),
+        },
+        diagnostics = {
+          globals = {'vim'},
+        },
+        workspace = {
+          library = {
+            [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+            [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+          },
+        },
+      },
+    },
+  }
+end
