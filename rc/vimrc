@@ -56,12 +56,6 @@ let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'
 if has('nvim')
   set pumblend=15
   lua << EOF
-  if package.loaded['lspconfig'] then
-    vim.lsp.set_log_level("info")
-    require'lspconfig'.pyright.setup{}
-    require'lspconfig'.intelephense.setup{}
-    require'lspconfig'.vuels.setup{}
-    require'lspconfig'.tsserver.setup{}
-  end
+    require('mylspconfig')
 EOF
 endif
