@@ -9,7 +9,7 @@ local default_available_servers = {
 
 local status, lspconfig = pcall(require, 'lspconfig')
 if status then
-	for i, name in ipairs(default_available_servers) do
+	for _, name in ipairs(default_available_servers) do
 		lspconfig[name].setup{}
 	end
 end
