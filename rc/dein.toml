@@ -402,3 +402,7 @@ if = 'has("nvim")'
 repo = 'nvim-telescope/telescope.nvim'
 if = 'has("nvim")'
 
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_post_update = ':TSUpdate'
+if = 'has("nvim")'
