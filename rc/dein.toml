@@ -389,3 +389,16 @@ if = 'has("nvim")'
 repo = 'iamcco/markdown-preview.nvim'
 on_cmd = 'MarkdownPreview'
 build = 'sh -c "cd app && yarn install"'
+
+[[plugins]]
+repo = 'nvim-lua/popup.nvim'
+if = 'has("nvim")'
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+if = 'has("nvim")'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'
+if = 'has("nvim")'
+
