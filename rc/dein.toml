@@ -1,4 +1,10 @@
 [ftplugin]
+lua = '''
+nmap <buffer> <Leader>r <Plug>(Luadev-RunLine)
+vmap <buffer> <Leader>r <Plug>(Luadev-Run)
+nmap <buffer> K <Plug>(Luadev-RunWord)
+'''
+
 help = '''
 nnoremap <buffer> <CR> <C-]>
 nnoremap <buffer> <BS> <C-T>
@@ -406,3 +412,7 @@ if = 'has("nvim")'
 repo = 'nvim-treesitter/nvim-treesitter'
 hook_post_update = ':TSUpdate'
 if = 'has("nvim")'
+
+[[plugins]]
+repo = 'bfredl/nvim-luadev'
+on_cmd = 'Luadev'
