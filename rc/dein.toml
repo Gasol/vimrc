@@ -173,6 +173,9 @@ repo = 'tpope/vim-dispatch'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+hook_add = '''
+nnoremap <silent> <Leader>G :G<cr>
+'''
 
 [[plugins]]
 repo = 'tpope/vim-git'
