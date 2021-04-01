@@ -4,6 +4,7 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+let mapleader=" "
 execute 'source ' . expand('<sfile>:p:h') . '/dein.rc.vim'
 if !has('nvim')
   autocmd VimEnter * call dein#call_hook('post_source')
@@ -13,7 +14,6 @@ filetype plugin indent on
 syntax enable
 nnoremap <SPACE> <NOP>
 nnoremap Q <NOP>
-let mapleader=" "
 
 set t_Co=256
 set guifont=Menlo-Regular:h14

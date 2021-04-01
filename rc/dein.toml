@@ -50,7 +50,7 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 repo = 'Yggdroot/LeaderF'
 hook_post_update = ':LeaderfInstallCExtension'
 hook_add = '''
-    nnoremap <silent><unique> <Leader>F :<C-U>LeaderfSelf<CR>
+    nnoremap <unique><silent> <Leader>F :<C-U>LeaderfSelf<CR>
     if executable('universal-ctags')
         let g:Lf_Ctags = 'universal-ctags'
     endif
@@ -174,7 +174,7 @@ repo = 'tpope/vim-dispatch'
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 hook_add = '''
-nnoremap <silent> <Leader>G :G<cr>
+nnoremap <unique><silent> <Leader>G :<C-U>G<cr>
 '''
 
 [[plugins]]
