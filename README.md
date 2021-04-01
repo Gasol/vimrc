@@ -1,13 +1,13 @@
 # /home/gasolwu/.vim/
 
-The Vim configuration is used in my daily work. I mainly use Neovim but still
-keep compatibility for Vim in terms of portability. Because I'm not only a
-serious developer who code on Apple machines, but also a system administrator
-who operates on various unix-like machines. There are many languages I work
-with, including, but not limited to, PHP, Java, C, Python, JavaScript. Hope it
-might be useful if you speak the same language too. This Vim configuration
-isn't meant to make Vim looks like an IDE. It's optimized for security,
-efficiency and vim-ish with ♥️.
+The Vim configuration is used in my daily work. I mainly use Neovim (nightly
+build for the treesitter support) but still keep compatibility for Vim in terms of
+portability. Because I'm not only a serious developer who code on Apple
+machines, but also a system administrator who operates on various unix-like
+machines. There are many languages I work with, including, but not limited to,
+PHP, Java, C, Python, JavaScript. Hope it might be useful if you speak the same
+language too. This Vim configuration isn't meant to make Vim looks like an IDE.
+It's optimized for security, efficiency and vim-ish with ♥️.
 
 ## Installation
 
