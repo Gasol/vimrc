@@ -370,6 +370,9 @@ repo = 'sodapopcan/vim-twiggy'
 
 [[plugins]]
 repo = 'justinmk/vim-sneak'
+hook_add = '''
+let g:sneak#map_netrw = 0
+'''
 
 [[plugins]]
 repo = 'tpope/vim-rsi'
