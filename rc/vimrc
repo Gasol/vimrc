@@ -4,6 +4,7 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+let g:NERDTreeHijackNetrw=0
 let mapleader=" "
 execute 'source ' . expand('<sfile>:p:h') . '/dein.rc.vim'
 if !has('nvim')
