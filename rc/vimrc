@@ -65,6 +65,9 @@ if has('nvim')
         enable = true,
         use_languagetree = true,
       },
+      indent = {
+        enable = true
+      }
     }
 EOF
 endif
