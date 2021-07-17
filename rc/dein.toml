@@ -422,3 +422,6 @@ if = 'has("nvim")'
 [[plugins]]
 repo = 'bfredl/nvim-luadev'
 on_cmd = 'Luadev'
+
+[[plugins]]
+repo = 'AndrewRadev/tagalong.vim'
