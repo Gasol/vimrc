@@ -99,6 +99,7 @@ hook_add = '''
     let s:vim_tags = expand('~/.cache/tags')
     let g:gutentags_cache_dir = s:vim_tags
     set statusline+=%{gutentags#statusline()}
+    let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
 '''
 
 [[plugins]]
