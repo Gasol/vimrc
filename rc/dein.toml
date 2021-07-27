@@ -426,3 +426,18 @@ on_cmd = 'Luadev'
 
 [[plugins]]
 repo = 'AndrewRadev/tagalong.vim'
+
+[[plugins]]
+repo = 'glepnir/lspsaga.nvim'
+hook_add = '''
+set ttm=150
+nnoremap <silent><leader>ca :Lspsaga code_action<CR>
+vnoremap <silent><leader>ca :<C-U>Lspsaga range_code_action<CR>
+nnoremap <silent> gs :Lspsaga signature_help<CR>
+nnoremap <silent>gr :Lspsaga rename<CR>
+nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
+nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
+nnoremap <silent> <leader>cd :Lspsaga show_line_diagnostics<CR>
+nnoremap <silent> <A-d> :Lspsaga open_floaterm<CR>
+tnoremap <silent> <A-d> <C-\><C-n>:Lspsaga close_floaterm<CR>
+'''

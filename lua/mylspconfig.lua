@@ -46,3 +46,5 @@ if sumneko_executable ~= nil and #sumneko_executable > 0 then
     },
   }
 end
+local saga = require 'lspsaga'
+saga.init_lsp_saga()
