@@ -1,3 +1,6 @@
+if not package.loaded['vim.lsp'] then
+	return
+end
 vim.lsp.set_log_level('info')
 
 local default_available_servers = {

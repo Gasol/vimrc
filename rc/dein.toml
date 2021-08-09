@@ -392,11 +392,11 @@ let g:localvimrc_whitelist=$HOME . '/\.lvimrc'
 
 [[plugins]]
 repo = 'neovim/nvim-lspconfig'
-if = 'has("nvim")'
+if = 'has("nvim-0.5.0")'
 
 [[plugins]]
 repo = 'deoplete-plugins/deoplete-lsp'
-if = 'has("nvim")'
+if = 'has("nvim-0.5.0")'
 
 [[plugins]]
 repo = 'iamcco/markdown-preview.nvim'
@@ -413,12 +413,12 @@ if = 'has("nvim")'
 
 [[plugins]]
 repo = 'nvim-telescope/telescope.nvim'
-if = 'has("nvim")'
+if = 'has("nvim-0.5.0")'
 
 [[plugins]]
 repo = 'nvim-treesitter/nvim-treesitter'
 hook_post_update = ':TSUpdate'
-if = 'has("nvim")'
+if = 'has("nvim-0.5.0")'
 
 [[plugins]]
 repo = 'bfredl/nvim-luadev'
