@@ -53,6 +53,8 @@ hook_add = '''
     nnoremap <unique><silent> <Leader>F :<C-U>LeaderfSelf<CR>
     if executable('universal-ctags')
         let g:Lf_Ctags = 'universal-ctags'
+    elseif executable('uctags')
+        let g:Lf_Ctags = 'uctags'
     endif
     let g:Lf_PreviewInPopup = 1
     let g:Lf_WindowPosition = 'popup'
