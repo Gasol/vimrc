@@ -60,9 +60,9 @@ if has('nvim')
   set pumblend=15
   lua << EOF
     require('mylspconfig')
-    loaded, treesitter = pcall(require, 'nvim-treesitter')
+    local loaded, treesitter = pcall(require, 'nvim-treesitter.configs')
     if loaded then
-      treesitter.configs.setup {
+      treesitter.setup {
         highlight = {
           enable = true,
           use_languagetree = true,
