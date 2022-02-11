@@ -8,6 +8,7 @@ local default_available_servers = {
 	'intelephense',
 	'vuels',
 	'tsserver',
+	'dartls',
 }
 local custom_lsp_attach = function(client)
 	vim.api.nvim_buf_set_keymap(0, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true})
