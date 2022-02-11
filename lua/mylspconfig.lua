@@ -1,5 +1,6 @@
-if not package.loaded['vim.lsp'] then
-	return
+local status, lsp = pcall(require, 'vim.lsp')
+if not status then
+  return
 end
 vim.lsp.set_log_level('info')
 
