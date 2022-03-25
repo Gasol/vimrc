@@ -430,7 +430,7 @@ on_cmd = 'Luadev'
 repo = 'AndrewRadev/tagalong.vim'
 
 [[plugins]]
-repo = 'glepnir/lspsaga.nvim'
+repo = 'tami5/lspsaga.nvim'
 hook_add = '''
 set ttm=150
 nnoremap <silent><leader>ca :Lspsaga code_action<CR>
