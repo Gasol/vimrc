@@ -447,3 +447,12 @@ tnoremap <silent> <A-d> <C-\><C-n>:Lspsaga close_floaterm<CR>
 
 [[plugins]]
 repo = 'thosakwe/vim-flutter'
+
+[[plugins]]
+repo = 'jvanja/vim-bootstrap4-snippets'
+
+[[plugins]]
+repo = 'Shougo/deol.nvim'
+
+[[plugins]]
+repo = 'github/copilot.vim'
