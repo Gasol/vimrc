@@ -122,7 +122,7 @@ hook_add = '''
 repo = 'haginaga/vim-compiler-phpunit'
 
 [[plugins]]
-repo = 'janko-m/vim-test'
+repo = 'vim-test/vim-test'
 hook_add = '''
     nmap <silent> t<C-n> :TestNearest<CR>
     nmap <silent> t<C-f> :TestFile<CR>
