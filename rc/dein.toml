@@ -124,6 +124,11 @@ repo = 'haginaga/vim-compiler-phpunit'
 [[plugins]]
 repo = 'vim-test/vim-test'
 hook_add = '''
+    let test#strategy = {
+        \ 'nearest': 'neovim',
+        \ 'file':    'dispatch',
+        \ 'suite':   'dispatch',
+    \}
     nmap <silent> t<C-n> :TestNearest<CR>
     nmap <silent> t<C-f> :TestFile<CR>
     nmap <silent> t<C-s> :TestSuite<CR>
