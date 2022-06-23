@@ -476,3 +476,6 @@ let g:dart_style_guide = 2
 
 [[plugins]]
 repo = 'radenling/vim-dispatch-neovim'
+
+[[plugins]]
+repo = 'wakatime/vim-wakatime'
