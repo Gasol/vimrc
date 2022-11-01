@@ -466,3 +466,20 @@ repo = 'radenling/vim-dispatch-neovim'
 
 [[plugins]]
 repo = 'wakatime/vim-wakatime'
+
+[[plugins]]
+repo = 'MunifTanjim/nui.nvim'
+if = 'has("nvim-0.5.0")'
+
+[[plugins]]
+repo = 'rcarriga/nvim-notify'
+if = 'has("nvim-0.5.0")'
+
+[[plugins]]
+repo = 'folke/noice.nvim'
+depends = ['MunifTanjim/nui.nvim']
+hook_add = '''
+lua << EOF
+require("noice").setup()
+EOF
+'''
