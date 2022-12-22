@@ -431,6 +431,10 @@ hook_post_update = ':TSUpdate'
 if = 'has("nvim-0.5.0")'
 
 [[plugins]]
+repo = 'nvim-treesitter/playground'
+depends = ['nvim-treesitter/nvim-treesitter']
+
+[[plugins]]
 repo = 'bfredl/nvim-luadev'
 on_cmd = 'Luadev'
 
