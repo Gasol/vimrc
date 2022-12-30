@@ -53,6 +53,8 @@ augroup MyCustomFileType
   autocmd BufNewFile,BufRead *.gradle setl filetype=groovy sw=4 ts=4 et
   autocmd BufNewFile,BufRead *.thrift if &ft == 'conf' | setl filetype=thrift
   autocmd BufNewFile,BufRead *.md setl filetype=markdown
+  autocmd FileType markdown setlocal spell
+  autocmd FileType gitcommit setlocal spell
 augroup end
 
 let g:changelog_username = 'Gasol Wu <gasol.wu@gmail.com>'

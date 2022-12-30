@@ -505,3 +505,6 @@ EOF
 
 [[plugins]]
 repo = 'yasuhiroki/github-actions-yaml.vim'
+
+[[plugins]]
+repo = 'kamykn/spelunker.vim'
