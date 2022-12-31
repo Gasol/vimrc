@@ -502,3 +502,6 @@ require("noice").setup({
 })
 EOF
 '''
+
+[[plugins]]
+repo = 'yasuhiroki/github-actions-yaml.vim'
