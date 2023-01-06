@@ -481,6 +481,7 @@ if = 'has("nvim-0.5.0")'
 
 [[plugins]]
 repo = 'folke/noice.nvim'
+if = 'has("nvim-0.5.0")'
 depends = ['MunifTanjim/nui.nvim']
 hook_add = '''
 lua << EOF
