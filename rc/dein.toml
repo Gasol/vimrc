@@ -398,6 +398,7 @@ repo = 'dhulihan/vim-rfc'
 repo = 'embear/vim-localvimrc'
 hook_add = '''
 let g:localvimrc_whitelist=$HOME . '/\.lvimrc'
+let g:localvimrc_persistent = 1
 '''
 
 [[plugins]]
