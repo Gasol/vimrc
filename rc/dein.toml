@@ -443,6 +443,7 @@ repo = 'AndrewRadev/tagalong.vim'
 
 [[plugins]]
 repo = 'glepnir/lspsaga.nvim'
+if = 'has("nvim")'
 
 [[plugins]]
 repo = 'thosakwe/vim-flutter'
