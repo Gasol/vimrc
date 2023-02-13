@@ -432,8 +432,8 @@ hook_post_update = ':TSUpdate'
 if = 'has("nvim-0.5.0")'
 hook_add = '''
 augroup gitcommit BufEnter
-  au FileType gitcommit hi link @text.diff.add diffAdded
-  au FileType gitcommit hi link @text.diff.delete diffRemoved
+  au FileType gitcommit,diff hi link @text.diff.add diffAdded
+  au FileType gitcommit,diff hi link @text.diff.delete diffRemoved
 augroup END
 '''
 
